@@ -22,7 +22,7 @@ CoderHouse is a voice-based social networking application that facilitates real-
 - **User Engagement**: High-quality audio communication leading to increased participation and user satisfaction.
 
 ## Tech Stack
-- **Frontend**: React.js, Tailwind CSS
+- **Frontend**: React.js
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Real-Time Communication**: WebRTC, Socket.IO
