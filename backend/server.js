@@ -1,4 +1,3 @@
-// require('dotenv').config();
 const express = require('express');
 const app = express();
 const server = require('http').createServer(app);
@@ -6,6 +5,7 @@ const DbConnect = require('./database');
 const router = require('./routes');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
+
 
 const ACTIONS = require('./actions');
 
@@ -21,7 +21,14 @@ const corsOption = {
     credentials: true,
     origin: [process.env.FRONT_URL],
 };
-app.use(cors(corsOption));
+const corsOptions = {
+    origin: 'http://localhost:3000', // Allow requests from this origin
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the allowed methods
+    credentials: true, // Allow cookies to be sent
+};
+
+app.use(cors(corsOptions));
+app.use(express.json());
 app.use('/storage', express.static('storage'));
 
 const PORT = process.env.PORT || 5500;
