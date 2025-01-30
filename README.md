@@ -34,19 +34,7 @@ CoderHouse is a voice-based social networking application that facilitates real-
 ### Directory Descriptions:
 - **frontend/**: This folder contains the frontend code, built using React.js and Tailwind CSS, handling the user interface and client-side logic.
 - **backend/**: The main backend server, built using Node.js and Express.js, managing API requests and real-time communication.
-- **actions/**: This folder defines the actions used for managing real-time interactions:
-    - `JOIN`: Join a voice channel.
-    - `LEAVE`: Leave a voice channel.
-    - `ADD_PEER`: Add a new peer to the communication session.
-    - `REMOVE_PEER`: Remove a peer from the session.
-    - `RELAY_ICE`: Relay ICE candidates between peers.
-    - `RELAY_SDP`: Relay session descriptions between peers.
-    - `SESSION_DESCRIPTION`: Handle session descriptions.
-    - `ICE_CANDIDATE`: Handle ICE candidates.
-    - `MUTE`: Mute a user.
-    - `UNMUTE`: Unmute a user.
-    - `MUTE_INFO`: Information regarding mute status.
-
+- 
 ## Installation
 To set up the project locally, follow these steps:
 
